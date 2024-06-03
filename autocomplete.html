@@ -12,11 +12,11 @@
     </script>
   </head>
   <body>
-    <input id="city-input" type="text" placeholder="Podaj Miasto" oninput="sendValueToAdalo()">
+    <input id="city-input" type="text" placeholder="Podaj miasto" oninput="sendValueToAdalo()">
     <script>
       function sendValueToAdalo() {
         var cityInput = document.getElementById('Miasto').value;
-        window.postMessage(cityInput, '*');
+        window.ReactNativeWebView.postMessage(cityInput);
       }
     </script>
   </body>
